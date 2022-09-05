@@ -1,7 +1,9 @@
 
 :root{
-  --main-font:'Nunito', sans-serif
+  --main-font:'Nunito', sans-serif;
+  --main-font-color: #272142;
 }
+
 
 h1{
   font-family: var(--main-font);
@@ -11,6 +13,9 @@ h1{
 p{
   font-family: var(--main-font);
   font-weight: 400;
+}
+a{
+  text-decoration: none;
 }
 
 .hero{
@@ -39,4 +44,51 @@ p{
 .main-btn:hover{
   color:#0BA2AC;
 }
+
+.galery-pictures{
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.galery-recipe-label {
+text-decoration: none;
+color:var(--main-font-color);
+font-size: 28px;
+line-height: 38px;
+font-weight: 700;
+}
+.galery-row{
+  margin-bottom: 40px;
+}
+
+.main-gallery{
+  max-width: 75%;
+}
+@media (max-width: 600px) {
+   .galery-recipe-label{
+    font-size: 12px;
+line-height: 15px;
+font-weight: 700;
+}
+.galery-pictures{
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.main-btn{
+  margin:10px 0px;
+}
+.hero p{
+  font-size: 15px;
+  line-height: 25px;
+    margin:20px 0px;
+
+}
+h1{
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 35px;
+}
+
+  }
+
+
 
