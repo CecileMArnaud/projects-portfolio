@@ -1,211 +1,199 @@
-
-:root{
-  --main-font:'Nunito', sans-serif;
-  --main-font-color: #272142;
-  --highlight-yellow:#fcd267;
-  --highlight-red:#BB1D08;
-  --highlight-blue:#0BA2AC;
-
+:root {
+	--main-font: "Nunito", sans-serif;
+	--main-font-color: #272142;
+	--highlight-yellow: #fcd267;
+	--highlight-red: #bb1d08;
+	--highlight-blue: #0ba2ac;
 }
 
-
-h1{
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 72px;
-}
-p{
-  font-family: var(--main-font);
-  font-weight: 400;
-  color: var(--main-font-color);
-  font-size: 18px;
-  line-height: 30px;
-  margin:0;
-
-}
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-h2{
- margin:20px 0;
-  color:var(--main-font-color);
-  font-size: 64px;
-}
-h3{
-  margin:42px 0;
-  color:var(--main-font-color);
-  font-size: 36px;
-
-}
-strong{
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 33px;
-  margin:20px 0;
-
-}
-hr{
-  border:1px dashed var(--highlight-yellow);
-  margin:10px 0;
-
-}
-.hero{
-  background: linear-gradient(90deg, rgb(0, 0, 0,0.5) 0%,   rgba(154, 154, 154, 0.5) 50%, rgb(0, 0, 0,0.5) 100%), url("/media/hero.png");
-  padding: 50px 25%;
-  margin:80px 0;
-  text-align: center;
-  color:white;
-  background-size: cover;
-}
-.content-hero h1{
-    padding: 50px 25%;
-  margin:80px 0;
-  text-align: center;
-  color:var(--main-font-color);
-  font-size: 72px;
-}
-.step-label{
-  font-family: var(--main-font);
-  color:var(--highlight-red);
-  font-weight: 800;
-  font-size:18px;
-  line-height: 25px;
-  margin:14px 0;
-}
-.step-content{
-  margin-bottom:40px;
-}
- 
-.hero p{
-  font-size: 24px;
-  line-height: 35px;
-    margin:20px;
-    color:white;
-
-}
-.main-btn{
-  border-radius: 4px;
-  background: #FEE7AE;
-  font-family: var(--main-font);
-  text-decoration: none;
-  padding:15px 20px;
-  color: black;
-  margin:50px;
-}
-.main-btn:hover{
-  color:#0BA2AC;
+h1 {
+	font-family: var(--main-font);
+	font-weight: 700;
+	font-size: 72px;
 }
 
-.galery-pictures{
-  border-radius: 12px;
-  margin-bottom: 20px;
+h2 {
+	margin: 20px 0;
+	color: var(--main-font-color);
+	font-size: 64px;
+}
+h3 {
+	margin: 42px 0;
+	color: var(--main-font-color);
+	font-size: 36px;
+}
+hr {
+	border: 1px dashed var(--highlight-yellow);
+	margin: 10px 0;
+}
+p {
+	font-family: var(--main-font);
+	font-weight: 400;
+	color: var(--main-font-color);
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0;
+}
+strong {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 33px;
+	margin: 20px 0;
+}
+
+nav {
+	margin-top: 40px;
+}
+
+nav li {
+	margin-left: 30px;
+}
+nav ul {
+	list-style-type: none;
+	padding-top: 20px;
+}
+nav a,
+.footer-container a {
+	color: var(--main-font-color);
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+}
+
+nav .active a,
+nav a:hover,
+.footer-container a:hover {
+	color: var(--highlight-blue);
+}
+
+.content-container {
+	max-width: 750px;
+}
+.contact-container {
+	max-width: 965px;
+}
+
+.contact-details {
+	text-transform: uppercase;
+	color: var(--highlight-blue);
+	font-family: var(--main-font);
+	font-size: 18px;
+	line-height: 25px;
+	margin: 50px 0 20px 0;
+}
+.content-hero h1 {
+	padding: 50px 25%;
+	margin: 80px 0;
+	text-align: center;
+	color: var(--main-font-color);
+	font-size: 72px;
+}
+.footer-container {
+	background: #fff7e2;
+	padding: 38px 140px;
+}
+.galery-pictures {
+	border-radius: 12px;
+	margin-bottom: 20px;
 }
 .galery-recipe-label {
-text-decoration: none;
-color:var(--main-font-color);
-font-size: 28px;
-line-height: 38px;
-font-weight: 700;
+	text-decoration: none;
+	color: var(--main-font-color);
+	font-size: 28px;
+	line-height: 38px;
+	font-weight: 700;
 }
-.galery-row{
-  margin-bottom: 40px;
+.galery-row {
+	margin-bottom: 40px;
 }
-
-.main-gallery{
-  max-width: 75%;
+.hero {
+	background: linear-gradient(
+			90deg,
+			rgb(0, 0, 0, 0.5) 0%,
+			rgba(154, 154, 154, 0.5) 50%,
+			rgb(0, 0, 0, 0.5) 100%
+		),
+		url("/media/hero.png");
+	padding: 50px 25%;
+	margin: 80px 0;
+	text-align: center;
+	color: white;
+	background-size: cover;
 }
-
-.content-container{
-  max-width: 750px;
-}
-.contact-container{
-  max-width:965px;
-}
-
-.contact-details{
-  text-transform: uppercase;
-  color:var(--highlight-blue);
-  font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 25px;
-  margin:50px 0 20px 0;
-
-}
-.footer-container{
-  background: #FFF7E2;
-  padding:38px 140px;
-
-}
-footer .social-icons i{
-font-size: 16px ;
-padding-left: 20px;
+.hero p {
+	font-size: 24px;
+	line-height: 35px;
+	margin: 20px;
+	color: white;
 }
 
-nav{
-  margin-top: 40px;
-
-}
-.logo{
-  max-height: 80px;
-}
-nav ul{
-  list-style-type:none;
-  padding-top:20px
-}
-nav li{
-  margin-left:30px;  
-}
-nav a{
-  color:var(--main-font-color);
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 700;
+.logo {
+	max-height: 80px;
 }
 
-nav .active a, nav a:hover{
-  color:var(--highlight-blue) ;
+.main-btn {
+	border-radius: 4px;
+	background: #fee7ae;
+	font-family: var(--main-font);
+	text-decoration: none;
+	padding: 15px 20px;
+	color: black;
+	margin: 50px;
+}
+.main-btn:hover {
+	color: #0ba2ac;
+}
+.main-gallery {
+	max-width: 75%;
 }
 
-
+.step-content {
+	margin-bottom: 40px;
+}
+.step-label {
+	font-family: var(--main-font);
+	color: var(--highlight-red);
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 25px;
+	margin: 14px 0;
+}
 
 @media (max-width: 600px) {
-  h1{
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 35px;
-  }
-  nav a{
-  color:var(--main-font-color);
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: 700;
+	h1 {
+		font-family: var(--main-font);
+		font-weight: 700;
+		font-size: 35px;
+	}
+	nav a {
+		color: var(--main-font-color);
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: 700;
+	}
+	nav li {
+		margin-left: 15px;
+	}
+
+	.galery-recipe-label {
+		font-size: 12px;
+		line-height: 15px;
+		font-weight: 700;
+	}
+	.galery-pictures {
+		border-radius: 10px;
+		margin-bottom: 15px;
+	}
+	.hero p {
+		font-size: 15px;
+		line-height: 25px;
+		margin: 20px 0px;
+	}
+	.main-btn {
+		margin: 10px 0px;
+	}
 }
-nav li{
-  margin-left:15px;  
-}
-
-   .galery-recipe-label{
-    font-size: 12px;
-line-height: 15px;
-font-weight: 700;
-}
-.galery-pictures{
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.main-btn{
-  margin:10px 0px;
-}
-.hero p{
-  font-size: 15px;
-  line-height: 25px;
-    margin:20px 0px;
-
-}
-
-
-  }
-
-
-
