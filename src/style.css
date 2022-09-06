@@ -53,14 +53,14 @@ hr{
 .hero{
   background: linear-gradient(90deg, rgb(0, 0, 0,0.5) 0%,   rgba(154, 154, 154, 0.5) 50%, rgb(0, 0, 0,0.5) 100%), url("/media/hero.png");
   padding: 50px 25%;
-  margin:100px 0;
+  margin:80px 0;
   text-align: center;
   color:white;
   background-size: cover;
 }
 .content-hero h1{
     padding: 50px 25%;
-  margin:100px 0;
+  margin:80px 0;
   text-align: center;
   color:var(--main-font-color);
   font-size: 72px;
@@ -132,6 +132,31 @@ font-weight: 700;
   margin:50px 0 20px 0;
 
 }
+nav{
+  margin-top: 40px;
+
+}
+.logo{
+  max-height: 80px;
+}
+nav ul{
+  list-style-type:none;
+  padding-top:20px
+}
+nav li{
+  margin-left:30px;  
+}
+nav a{
+  color:var(--main-font-color);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+nav .active a, nav a:hover{
+  color:var(--highlight-blue) ;
+}
+
 
 
 @media (max-width: 600px) {
@@ -140,6 +165,15 @@ font-weight: 700;
     font-weight: 700;
     font-size: 35px;
   }
+  nav a{
+  color:var(--main-font-color);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+}
+nav li{
+  margin-left:15px;  
+}
 
    .galery-recipe-label{
     font-size: 12px;
@@ -159,6 +193,7 @@ font-weight: 700;
     margin:20px 0px;
 
 }
+
 
   }
 
